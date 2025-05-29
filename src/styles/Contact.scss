@@ -1,0 +1,69 @@
+// Variables
+$contact-primary: #9694FF;
+$contact-secondary: #EB8317;
+$contact-bg: #021526;
+$contact-text: #F4F6FF;
+$contact-shadow: #000000;
+$contact-border: #4a4a4a;
+
+
+.contact-section {
+    background-color: $contact-bg;
+    color: $contact-text;
+    padding: 6rem 2rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 80vh;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        linear-gradient(to right, rgba(107, 91, 149, 0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(107, 91, 149, 0.1) 1px, transparent 1px);
+      background-size: 20px 20px;
+      z-index: -1;
+    }
+}
+
+.contact-info-title {
+    color: $contact-secondary;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 0 $contact-shadow;
+}
+
+.contact-contact-methods {
+    margin-top: 2rem;
+}
+
+.contact-contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    color: $contact-text;
+    cursor: pointer;
+
+    .contact-contact-icon {
+      color: $contact-secondary;
+      margin-right: 1rem;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    a {
+      color: $contact-text;
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $contact-secondary;
+      }
+    }
+}

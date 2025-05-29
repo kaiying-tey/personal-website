@@ -1,0 +1,81 @@
+// Variables
+$home-primary: #9694FF;
+$home-secondary: #EB8317;
+$home-bg: #021526;
+$home-text: #F4F6FF;
+$home-shadow: #000000;
+$home-border: #4a4a4a;
+
+
+.experience {
+  background-color: $home-bg;
+  color: $home-text;
+  padding: 4rem 0;
+  font-family: 'Press Start 2P', cursive;
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.experience-container {
+  position: relative;
+  z-index: 1;
+}
+
+.experience-title {
+  font-size: 1.7rem;
+  color: $home-secondary;
+  text-shadow: 3px 3px 0 $home-shadow;
+  margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.experience-timeline {
+  &::before {
+    background: $home-secondary !important;
+    width: 4px !important;
+    box-shadow: 2px 2px 0 $home-shadow;
+  }
+}
+
+.experience-date {
+  color: $home-secondary !important;
+  font-family: 'Press Start 2P', cursive !important;
+  text-shadow: 1px 1px 0 $home-shadow;
+  opacity: 1 !important;
+  padding: 0.5rem 1rem !important;
+}
+
+.experience-timeline-element {
+  margin: 0 0 2rem 0 !important;
+
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+.experience-timeline-title {
+  font-size: 1rem !important;
+  color: $home-secondary !important;
+  margin-bottom: 0.5rem !important;
+  text-shadow: 2px 2px 0 $home-shadow;
+  font-family: 'Press Start 2P', cursive !important;
+}
+
+.experience-timeline-subtitle {
+  font-size: 0.8rem !important;
+  color: $home-primary !important;
+  margin-bottom: 1rem !important;
+  font-family: 'Press Start 2P', cursive !important;
+  text-shadow: 1px 1px 0 $home-shadow;
+}
+
+.experience-timeline-desc {
+  font-size: 1rem !important;
+  line-height: 1.8 !important;
+  margin-bottom: 1rem !important;
+  font-family: "Tilt Neon", sans-serif;
+}

@@ -1,0 +1,114 @@
+// Variables
+$project-primary: #9694FF;
+$project-secondary: #EB8317;
+$project-bg: #021526;
+$project-text: #F4F6FF;
+$project-border: #4a4a4a;
+$project-shadow: #000000;
+
+
+// Project Card
+.project-card {
+    background-color: darken($project-bg, 5%) !important;
+    border-bottom: 3px solid $project-border;
+    padding: 1rem;
+    height: 100%;
+    box-shadow: 6px 6px 0 $project-shadow !important;
+    transition: all 0.2s ease;
+}
+
+.project-card-img-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-bottom: 3px solid $project-border;
+}
+
+.project-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: pixelated;
+  transition: transform 0.3s ease;
+
+  .project-card:hover & {
+    transform: scale(1.05);
+  }
+}
+
+.project-card-footer {
+    border-top: 3px solid $project-border !important;
+    padding: 1rem 0 !important;
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+// Projects Typography
+.projects-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.8rem;
+    color: $project-secondary;
+    text-shadow: 3px 3px 0 $project-shadow;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.project-card-title {
+    font-family: 'Press Start 2P', cursive;
+    color: $project-secondary !important;
+    margin-bottom: 0.9rem !important;
+    font-size: 1.1rem;
+}
+
+.project-card-desc {
+    color: $project-text !important;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.project-tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem !important;
+}
+
+.project-card-tag {
+    background-color: $project-primary !important;
+    color: $project-text !important;
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.8rem !important;
+    border: 1px solid $project-border !important;
+    border-radius: 0 !important;
+    box-shadow: 2px 2px 0 $project-shadow !important;
+    font-family: 'Silkscreen', cursive;
+}
+
+.project-icon-link {
+    color: $project-secondary !important;
+    border-color: $project-secondary !important;
+    border-radius: 0 !important;
+    border-width: 1.5px !important;
+    font-family: 'Silkscreen', cursive !important;
+    font-size: 0.8rem;
+    transition: all 0.2s ease;
+    box-shadow: 2px 2px 0 $project-shadow !important;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $project-secondary !important;
+        color: $project-shadow !important;
+        transform: translate(1px, 1px);
+        box-shadow: 1px 1px 0 $project-shadow !important;
+    }
+}
+
+.project-card-icon {
+    margin-right: 0.3rem;
+}
+
+

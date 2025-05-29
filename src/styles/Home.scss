@@ -1,0 +1,177 @@
+// Variables
+$home-primary: #9694FF;
+$home-secondary: #EB8317;
+$home-bg: #021526;
+$home-text: #F4F6FF;
+$home-shadow: #000000;
+$home-border: #4a4a4a;
+
+// Home top section
+.home-section {
+    background-color: $home-bg;
+    color: $home-text;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 6rem 1rem 4rem;
+    position: relative;
+    overflow: hidden;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    text-align: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        linear-gradient(to right, rgba(107, 91, 149, 0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(107, 91, 149, 0.1) 1px, transparent 1px);
+      background-size: 20px 20px;
+      z-index: -10;
+    }
+}
+
+.home-hello {
+    color: $home-secondary;
+    text-shadow: 1px 1px 0 $home-shadow;
+    margin-bottom: 1.5rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.home-name {
+    font-size: 2rem;
+    text-shadow: 2px 2px 0 $home-shadow;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    font-family: 'Silkscreen', cursive;
+}
+
+.home-name-highlight {
+    color: $home-secondary;
+}
+
+.home-role-text {
+    line-height: 2rem;
+    color: $home-primary;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+}
+
+.home-bio {
+    color: $home-text;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    font-family: "Tilt Neon", sans-serif;
+    font-size: 1rem;
+    padding: 0 2.5rem;
+}
+
+.home-top-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.home-top-btn {
+  border-radius: 0 !important;
+  font-family: 'Press Start 2P', cursive !important;
+  font-size: 0.7rem !important;
+  padding: 0.75rem 1.5rem !important;
+  box-shadow: 3px 3px 0 $home-shadow !important;
+  transition: all 0.2s ease;
+  border-width: 2px !important;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 $home-shadow !important;
+  }
+}
+
+.home-avatar {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  border: 4px solid $home-secondary;
+  box-shadow: 8px 8px 0 $home-shadow;
+  background-color: $home-bg;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-size: 10px 10px;
+  }
+}
+
+.home-avatar-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+// Home background floating stars
+.star-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/stardust.png');
+  animation: moveStars 60s linear infinite;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: 10000px 5000px; }
+}
+
+// Skills section
+.home-skills-section {
+  background-color: $home-bg;
+  padding: 3rem 0;
+  position: relative;
+  z-index: 5;
+}
+
+.home-skill-title {
+  font-size: 1.7rem;
+  font-family: 'Press Start 2P', cursive;
+  color: $home-secondary;
+  text-shadow: 3px 3px 0 $home-shadow;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.home-skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 0 $home-shadow;
+}
+
+.home-skill-name {
+  font-size: 0.9rem;
+  color: $home-text;
+  text-shadow: 1px 1px 0 $home-shadow;
+  word-break: break-word;
+  font-family: 'Silkscreen', cursive;
+}

@@ -1,0 +1,68 @@
+// Variables
+$footer-primary: #9694FF;
+$footer-secondary: #EB8317;
+$footer-bg: #021526;
+$footer-text: #F4F6FF;
+$footer-shadow: #000000;
+$footer-border: #4a4a4a;
+
+.footer {
+  background-color: $footer-bg;
+  color: $footer-text;
+  padding: 2rem 1rem;
+  border-top: 4px solid $footer-secondary;
+  box-shadow: 0 -5px 0 $footer-shadow;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
+  position: relative;
+  z-index: 3;
+}
+
+.footer-info {
+  display: inline-block;
+  border: 2px solid $footer-secondary;
+  padding: 1rem;
+  box-shadow: 5px 5px 0 $footer-shadow;
+  background-color: darken($footer-bg, 5%);
+}
+
+.footer-name {
+  color: $footer-secondary;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 0 $footer-shadow;
+}
+
+.footer-title {
+  color: $footer-primary;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 0 $footer-shadow;
+}
+
+.footer-social-links {
+  display: inline-flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.footer-social-icon {
+  color: $footer-secondary;
+  font-size: 1.5rem;
+  transition: all 0.2s ease;
+  text-shadow: 2px 2px 0 $footer-shadow;
+  display: inline-block;
+
+  &:hover {
+    color: lighten($footer-secondary, 10%);
+    transform: translateY(-3px);
+  }
+}
+
+.footer-copyright {
+  color: $footer-primary;
+  text-shadow: 1px 1px 0 $footer-shadow;
+  margin-bottom: 0;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
