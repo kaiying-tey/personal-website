@@ -1,6 +1,8 @@
 # 🎨 Personal Portfolio
 
-Welcome to my personal website! This is a creative, interactive React-based frontend website where I showcase my projects, experiences, and a bit of my personality as a software developer.
+Welcome to my personal website! Just a developer doing dev things. This is a creative, interactive React-based playground where I showcase my projects, experiences, skills and a bit of my personality as a software developer.
+
+Whether you're here to check out my work, get to know me, or just poke around — welcome, and enjoy the scroll!
 
 ## ✨ Features
 
@@ -10,7 +12,7 @@ Welcome to my personal website! This is a creative, interactive React-based fron
   - Projects
   - Experience
   - Contact
-- 🎨 Custom UI with a unique retro-inspired design
+- 🎨 Custom UI with a retro-inspired theme for a bit of fun
 - 🧩 Responsive layout and interactive elements
 
 ## 🚀 Getting Started
@@ -27,7 +29,6 @@ git clone https://github.com/kaiying-tey/personal-website.git
 cd personal-website
 npm install
 npm start
-
 ```
 
 ## 🛠️ Customization
@@ -37,5 +38,8 @@ Replace profile.jpg inside the src/images/ folder.
 
 To edit text or links:
 Check inside src/pages/ and src/components/.
+
+To replace your resume:
+Resume the resume pdf in the public/ folder.
 
 ### Thanks for stopping by!
