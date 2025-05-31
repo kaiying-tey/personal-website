@@ -11,7 +11,7 @@ import {
   FaLinux 
 } from 'react-icons/fa';
 import { PiFileSql, PiFileCSharp } from "react-icons/pi";
-import { SiPostman } from "react-icons/si";
+import { SiPostman, SiDotnet } from "react-icons/si";
 
 
 export const experienceData = [
@@ -20,32 +20,32 @@ export const experienceData = [
     company: "Juris Technologies",
     date: "May 2023 - May 2024",
     type: "work",
-    description: "Developed software solutions for banking and financial institutions using PHP, JavaScript, HTML and PL/SQL",
-    skills: ["PHP", "JavaScript", "HTML/CSS", "SQL"]
+    description: "Developed web applications for banking and financial institutions using PHP and JavaScript.",
+    skills: ["PHP", "JavaScript", "HTML/CSS", "SQL", "Oracle DB"]
   },
   {
     title: "Web Developer Intern",
     company: "Times Software Pte Ltd",
     date: "Nov 2021 - Feb 2022",
     type: "work",
-    description: "Designed and implemented visual elements and overall layout of payroll and human resource management web application using C#, Blazor framework.",
-    skills: ["C#", "ASP .Net"]
+    description: "Designed and implemented visual elements of a payroll and human resource management web application using C# (Blazor framework).",
+    skills: ["C#", "ASP.NET", "HTML"]
   },
   {
     title: "Freelance Front-End Web Developer",
     company: "Reluvate Technologies",
     date: "Sep 2021 - Oct 2021",
     type: "work",
-    description: "Develop user interfaces using ReactJS, ensuring responsive and interactive designs.",
-    skills: ["HTML/CSS", "JavaScript"]
+    description: "Developed web applications using ReactJS, ensuring responsive and interactive designs.",
+    skills: ["HTML/CSS", "ReactJS"]
   },
   {
-    title: "Computer Science Degree",
+    title: "Bachelor of Computer Science",
     company: "Monash University Malaysia",
     date: "Oct 2019 - Mar 2023",
     type: "education",
-    description: "Specialized in advanced computer science with focus on web technologies.",
-    skills: ["Algorithms", "Data Structures", "Java", "Python", "Databases"]
+    description: "Specialized in advanced computer science with a focus on algorithms, data structures, and web technologies.",
+    skills: ["Algorithms", "Data Structures", "Java", "Python", "Databases", "Computer Network"]
   }
 ]
 
@@ -69,7 +69,7 @@ export const projectsData = [
     description: "A responsive personal portfolio website built with React and Bootstrap.",
     image: "https://plus.unsplash.com/premium_vector-1734721796189-36e9788de24d?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tech: ["ReactJS", "Bootstrap", "JavaScript", "CSS"],
-    github: "https://github.com/yourusername/portfolio"
+    github: "https://github.com/kaiying-tey/personal-website"
   },
   {
     title: "Jamming",
@@ -83,7 +83,7 @@ export const projectsData = [
     description: "A text-based 'rogue-like' game with the theme of Zombie hunting, designed and implemented for a university course in 2020 using Java.",
     image: "https://images.unsplash.com/photo-1615830895977-70fa153b7ac0?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tech: ["Java"],
-    github: "https://github.com/yourusername/task-app"
+    github: "https://github.com/kaiying-tey/Zombies-And-Braaaains"
   },
   {
     title: "UPGrad",
@@ -101,10 +101,10 @@ export const skillsData = [
     { name: 'HTML5', icon: <FaHtml5 />, color: '#E34F26' },
     { name: 'CSS3', icon: <FaCss3Alt />, color: '#2965F1' },
     { name: 'SQL', icon: <PiFileSql />, color: '#4E71FF' },
-    { name: 'Node.js', icon: <FaNodeJs />, color: '#339933' },
     { name: 'Python', icon: <FaPython />, color: '#3776AB' },
     { name: 'Java', icon: <FaJava />, color: '#007396' },
     { name: 'Linux', icon: <FaLinux />, color: '#F3C623' },
     { name: 'Git', icon: <FaGitAlt />, color: '#F05032' },
     { name: 'Postman', icon: <SiPostman />, color: '#FF9B45' },
+    { name: 'ASP .NET', icon: <SiDotnet />, color: '#4E71FF' },
 ];

@@ -1,9 +1,9 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import ExperienceTimeline from '../components/ExperienceTimeline';
 import Skills from '../components/Skills';
-import ProfilePic from '../images/profile-1.jpeg';
+import ProfilePic from '../images/profile.png';
 import '../styles/Home.scss';
-import { FaGithub, FaFileDownload } from 'react-icons/fa';
+import { FaFileDownload } from 'react-icons/fa';
 import { PiProjectorScreenChart } from "react-icons/pi";
 
 
@@ -22,11 +22,11 @@ const Home = () => {
               <h2 className="mt-3 home-role-text">Junior Software Developer</h2>
               <p className="home-bio">
                   Hi there! I'm a junior software developer with a love for fun, interactive web apps. 
-                  I'm passionate about clean code, creative UIs, and building things that spark joy. I focus on frontend development (React is my current favorite) and I'm always exploring new ways to make websites more dynamic and delightful.
-                  When I'm not coding, I enjoy watching variety shows, playing sports, and relaxing with cozy indie games.
+                  I'm passionate about clean code, creative UIs, and building things that spark joy. I focus on frontend development (React is my current favourite) and I'm always exploring new technologies, new ways to make websites more dynamic and delightful.
+                  When I'm not coding, I enjoy watching variety shows, playing sports, and relaxing with cozy games.
               </p>
               <p className="home-bio mb-5">
-                🕹️ Fun Facts: My personal debugging method: console.log('WHY'); I drink more coffee than my IDE runs builds.
+                🕹️ Fun Facts: My personal debugging method: console.log('WHY'); and I drink more coffee than my IDE runs builds.
               </p>
               <div className="home-top-buttons">
                 <Button 
